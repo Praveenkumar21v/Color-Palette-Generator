@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Anton', sans-serif;
+font-family: 'Bebas Neue', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'PT Serif', serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #e3f2fd;
+}
+
+h1{
+    text-align: center;
+    font-size: 36px;
+    font-weight: bolder;
+    margin-top: 10px;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
+    overflow-y: hidden;
+}
+
+.color{
+    background-color: white;
+    list-style: none;
+    margin: 13px;
+    padding: 7px;
+    border-radius: 6px;
+    background-color: white;
+    box-shadow:0 10px 20px rgba(52, 87, 220, 0.08) ;
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out;
+}
+
+.color:active{
+    transform: scale(0.8);
+}
+
+.color:hover .box{
+    opacity: 0.9;
+}
+
+.box{
+    width: 138px;
+    height: 138px;
+    border-radius: 5px;
+    background-color:#8A6cff;
+}
+
+.hexValue{
+    display: block;
+    color: #444;
+    margin: 12px 0px 8px;
+    font-size: 1.15rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+
+}
+
+.refresh{
+    outline: none;
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    color: white;
+    font-weight: 500px;
+    background-color:#5026f9;
+    border: 2px solid white;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow:0 15px 25px rgba(52, 87, 220, 0.2) ;
+    margin-left: 45%;
+    margin-bottom: 10px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.refresh:active{
+    transform: scale(0.95);
+}
+
+
+
+@media screen and (max-width:375px) and (min-width:320px){
+  
+   
+    h1{
+        font-family: 'Protest Strike', sans-serif;
+        font-size: 28px;
+        margin-top: 15px;
+    }
+    .refresh{
+      position: relative;
+      left: -10px;
+    }
+    
+}
+
+@media screen and (max-width:426px) {
+  
+   
+    h1{
+        font-family: 'Protest Strike', sans-serif;
+        font-size: 28px;
+        margin-top: 15px;
+    }
+    
+    .refresh{
+        margin-left: 38%;
+        margin-bottom: 10px;
+    }
+}
